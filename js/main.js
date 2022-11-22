@@ -19,8 +19,9 @@ $(document).ready(function(){
      // -------   Active Mobile Menu-----//
 
     $(".menu-bar").on('click', function(e){
+
         e.preventDefault();
-        $("nav").toggleClass('hide');
+        $("#navbar-second").toggleClass('hide');
         $("span", this).toggleClass("lnr-menu lnr-cross");
         $(".main-menu").addClass('mobile-menu');
     });
